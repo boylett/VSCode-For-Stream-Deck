@@ -14,7 +14,7 @@ The Stream Deck half of a two-piece integration that puts Visual Studio Code on 
 
 Grab **Visual Studio Code for Stream Deck** from the Elgato Marketplace, or drop the latest `.streamDeckPlugin` from the [releases page](https://github.com/boylett/VSCode-For-Stream-Deck/releases) onto the Stream Deck app.
 
-You'll also need the companion [Stream Deck for Visual Studio Code](https://github.com/boylett/Stream-Deck-For-VSCode) extension installed in VS Code. Once both halves are running, VS Code's status bar shows `Deck | Connected | Active` for the window currently receiving commands.
+You'll also need the companion [Stream Deck Companion](https://github.com/boylett/Stream-Deck-For-VSCode) extension installed in VS Code. Once both halves are running, VS Code's status bar shows `Deck | Connected | Active` for the window currently receiving commands.
 
 ## Actions
 

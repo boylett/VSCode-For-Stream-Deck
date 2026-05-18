@@ -4,7 +4,7 @@
   "Name": "Visual Studio Code",
   "Author": "Ryan Boylett",
   "Version": "7.0.0.0",
-  "Description": "Control Visual Studio Code from your Stream Deck. Requires the companion 'Stream Deck for Visual Studio Code' VS Code extension.",
+  "Description": "Control Visual Studio Code from your Stream Deck. Requires the companion 'Stream Deck Companion' VS Code extension.",
   "Category": "Visual Studio Code",
   "CategoryIcon": "imgs/plugin/category-icon",
   "Icon": "imgs/plugin/marketplace",
