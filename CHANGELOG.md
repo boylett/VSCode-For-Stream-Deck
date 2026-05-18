@@ -19,7 +19,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - Plugin UUID changed from `com.nicollasr.streamdeckvsc` to `dev.boylett.vscode`. Existing button bindings need to be re-added.
-- Manifest updated to SDK version 2 with `Software.MinimumVersion` 6.5.
+- Manifest updated to SDK version 3 with `Software.MinimumVersion` 6.9 (Elgato Marketplace requirements for new submissions).
 - README rewritten as a user-facing install / usage guide.
 
 ### Removed
