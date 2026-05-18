@@ -47,6 +47,10 @@ If VS Code is connected to a remote machine over SSH, forward the bridge port ba
 RemoteForward 48969 127.0.0.1:48969
 ```
 
+## Credits
+
+Built on top of the original [streamdeckvsc](https://github.com/nicollasricas/streamdeckvsc) plugin and its [vscode-streamdeck](https://github.com/nicollasricas/vscode-streamdeck) companion extension, both by [Nicollas Ricas](https://github.com/nicollasricas). This branch is a ground-up rewrite of that work on the official Elgato Node.js Stream Deck SDK.
+
 ## Support
 
 If this is useful to you and you'd like to support its development, you can buy me a coffee on Ko-fi - always optional, always appreciated.
