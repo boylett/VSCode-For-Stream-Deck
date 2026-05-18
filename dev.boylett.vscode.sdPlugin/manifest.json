@@ -34,9 +34,13 @@
       "Tooltip": "Executes a Visual Studio Code command by its command ID.",
       "Icon": "imgs/actions/execute-command/icon",
       "PropertyInspectorPath": "ui/execute-command.html",
-      "Controllers": [ "Keypad" ],
+      "Controllers": [
+        "Keypad"
+      ],
       "States": [
-        { "Image": "imgs/actions/execute-command/key" }
+        {
+          "Image": "imgs/actions/execute-command/key"
+        }
       ]
     },
     {
@@ -45,9 +49,13 @@
       "Tooltip": "Runs a command in the currently active VS Code terminal.",
       "Icon": "imgs/actions/execute-terminal-command/icon",
       "PropertyInspectorPath": "ui/execute-terminal-command.html",
-      "Controllers": [ "Keypad" ],
+      "Controllers": [
+        "Keypad"
+      ],
       "States": [
-        { "Image": "imgs/actions/execute-terminal-command/key" }
+        {
+          "Image": "imgs/actions/execute-terminal-command/key"
+        }
       ]
     },
     {
@@ -56,9 +64,13 @@
       "Tooltip": "Opens a new integrated terminal with the configured settings.",
       "Icon": "imgs/actions/create-terminal/icon",
       "PropertyInspectorPath": "ui/create-terminal.html",
-      "Controllers": [ "Keypad" ],
+      "Controllers": [
+        "Keypad"
+      ],
       "States": [
-        { "Image": "imgs/actions/create-terminal/key" }
+        {
+          "Image": "imgs/actions/create-terminal/key"
+        }
       ]
     },
     {
@@ -67,9 +79,13 @@
       "Tooltip": "Inserts a snippet by name into the active editor.",
       "Icon": "imgs/actions/insert-snippet/icon",
       "PropertyInspectorPath": "ui/insert-snippet.html",
-      "Controllers": [ "Keypad" ],
+      "Controllers": [
+        "Keypad"
+      ],
       "States": [
-        { "Image": "imgs/actions/insert-snippet/key" }
+        {
+          "Image": "imgs/actions/insert-snippet/key"
+        }
       ]
     },
     {
@@ -78,9 +94,13 @@
       "Tooltip": "Changes the language mode of the active editor.",
       "Icon": "imgs/actions/change-language/icon",
       "PropertyInspectorPath": "ui/change-language.html",
-      "Controllers": [ "Keypad" ],
+      "Controllers": [
+        "Keypad"
+      ],
       "States": [
-        { "Image": "imgs/actions/change-language/key" }
+        {
+          "Image": "imgs/actions/change-language/key"
+        }
       ]
     },
     {
@@ -89,9 +109,13 @@
       "Tooltip": "Opens a folder or workspace in VS Code.",
       "Icon": "imgs/actions/open-folder/icon",
       "PropertyInspectorPath": "ui/open-folder.html",
-      "Controllers": [ "Keypad" ],
+      "Controllers": [
+        "Keypad"
+      ],
       "States": [
-        { "Image": "imgs/actions/open-folder/key" }
+        {
+          "Image": "imgs/actions/open-folder/key"
+        }
       ]
     }
   ]
