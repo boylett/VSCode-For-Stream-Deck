@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Execute Command</title>
+    <link rel="stylesheet" href="_pi.css" />
+    <script src="_pi.js"></script>
+  </head>
+  <body>
+    <div class="field">
+      <label for="command">Command ID</label>
+      <input type="text" id="command" placeholder="workbench.action.tasks.runTask" />
+    </div>
+
+    <div class="field">
+      <label for="arguments">Arguments</label>
+      <textarea id="arguments" placeholder='{"task": "build"}'></textarea>
+    </div>
+    <div class="hint">Optional JSON value passed as the command's arguments.</div>
+
+    <details>
+      <summary>Documentation</summary>
+      <div class="docs">
+        <p class="docs__heading">Finding a command ID</p>
+        <p>
+          In VS Code open <strong>File &rsaquo; Preferences &rsaquo; Keyboard Shortcuts</strong>,
+          find the command you want, right-click it and choose <strong>Copy Command ID</strong>.
+        </p>
+        <p class="docs__heading">Examples</p>
+        <ul>
+          <li><code>workbench.action.tasks.runTask</code> &mdash; run a configured task</li>
+          <li><code>editor.action.formatDocument</code> &mdash; format the current file</li>
+          <li><code>workbench.action.files.saveAll</code> &mdash; save every open file</li>
+        </ul>
+      </div>
+    </details>
+
+    <script>
+      initPropertyInspector([
+        { id: "command", type: "text" },
+        { id: "arguments", type: "textarea" },
+      ]);
+    </script>
+  </body>
+</html>

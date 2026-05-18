@@ -1,0 +1,98 @@
+{
+  "$schema": "https://schemas.elgato.com/streamdeck/plugins/manifest.json",
+  "UUID": "dev.boylett.vscode",
+  "Name": "Visual Studio Code",
+  "Author": "Ryan Boylett",
+  "Version": "7.0.0.0",
+  "Description": "Control Visual Studio Code from your Stream Deck. Requires the companion 'Stream Deck for Visual Studio Code' VS Code extension.",
+  "Category": "Visual Studio Code",
+  "CategoryIcon": "imgs/plugin/category-icon",
+  "Icon": "imgs/plugin/marketplace",
+  "CodePath": "bin/plugin.js",
+  "SDKVersion": 2,
+  "Software": {
+    "MinimumVersion": "6.5"
+  },
+  "OS": [
+    {
+      "Platform": "mac",
+      "MinimumVersion": "10.15"
+    },
+    {
+      "Platform": "windows",
+      "MinimumVersion": "10"
+    }
+  ],
+  "Nodejs": {
+    "Version": "20",
+    "Debug": "enabled"
+  },
+  "Actions": [
+    {
+      "UUID": "dev.boylett.vscode.execute-command",
+      "Name": "Execute Command",
+      "Tooltip": "Executes a Visual Studio Code command by its command ID.",
+      "Icon": "imgs/actions/execute-command/icon",
+      "PropertyInspectorPath": "ui/execute-command.html",
+      "Controllers": [ "Keypad" ],
+      "States": [
+        { "Image": "imgs/actions/execute-command/key" }
+      ]
+    },
+    {
+      "UUID": "dev.boylett.vscode.execute-terminal-command",
+      "Name": "Execute Terminal Command",
+      "Tooltip": "Runs a command in the currently active VS Code terminal.",
+      "Icon": "imgs/actions/execute-terminal-command/icon",
+      "PropertyInspectorPath": "ui/execute-terminal-command.html",
+      "Controllers": [ "Keypad" ],
+      "States": [
+        { "Image": "imgs/actions/execute-terminal-command/key" }
+      ]
+    },
+    {
+      "UUID": "dev.boylett.vscode.create-terminal",
+      "Name": "Create Terminal",
+      "Tooltip": "Opens a new integrated terminal with the configured settings.",
+      "Icon": "imgs/actions/create-terminal/icon",
+      "PropertyInspectorPath": "ui/create-terminal.html",
+      "Controllers": [ "Keypad" ],
+      "States": [
+        { "Image": "imgs/actions/create-terminal/key" }
+      ]
+    },
+    {
+      "UUID": "dev.boylett.vscode.insert-snippet",
+      "Name": "Insert Snippet",
+      "Tooltip": "Inserts a snippet by name into the active editor.",
+      "Icon": "imgs/actions/insert-snippet/icon",
+      "PropertyInspectorPath": "ui/insert-snippet.html",
+      "Controllers": [ "Keypad" ],
+      "States": [
+        { "Image": "imgs/actions/insert-snippet/key" }
+      ]
+    },
+    {
+      "UUID": "dev.boylett.vscode.change-language",
+      "Name": "Change Language",
+      "Tooltip": "Changes the language mode of the active editor.",
+      "Icon": "imgs/actions/change-language/icon",
+      "PropertyInspectorPath": "ui/change-language.html",
+      "Controllers": [ "Keypad" ],
+      "States": [
+        { "Image": "imgs/actions/change-language/key" }
+      ]
+    },
+    {
+      "UUID": "dev.boylett.vscode.open-folder",
+      "Name": "Open Folder",
+      "Tooltip": "Opens a folder or workspace in VS Code.",
+      "Icon": "imgs/actions/open-folder/icon",
+      "PropertyInspectorPath": "ui/open-folder.html",
+      "Controllers": [ "Keypad" ],
+      "States": [
+        { "Image": "imgs/actions/open-folder/key" }
+      ]
+    }
+  ]
+}

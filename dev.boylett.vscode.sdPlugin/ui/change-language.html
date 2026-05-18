@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Change Language</title>
+    <link rel="stylesheet" href="_pi.css" />
+    <script src="_pi.js"></script>
+  </head>
+  <body>
+    <div class="field">
+      <label for="languageId">Language ID</label>
+      <input type="text" id="languageId" placeholder="typescript" />
+    </div>
+    <div class="hint">VS Code language identifier, e.g. <code>typescript</code>, <code>python</code>, <code>plaintext</code>.</div>
+
+    <script>
+      initPropertyInspector([
+        { id: "languageId", type: "text" },
+      ]);
+    </script>
+  </body>
+</html>

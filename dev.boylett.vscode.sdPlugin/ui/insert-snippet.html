@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Insert Snippet</title>
+    <link rel="stylesheet" href="_pi.css" />
+    <script src="_pi.js"></script>
+  </head>
+  <body>
+    <div class="field">
+      <label for="name">Snippet Name</label>
+      <input type="text" id="name" placeholder="My Snippet" />
+    </div>
+    <div class="hint">
+      The display name (prefix) of a user or workspace snippet defined in your
+      VS Code snippet files.
+    </div>
+
+    <script>
+      initPropertyInspector([
+        { id: "name", type: "text" },
+      ]);
+    </script>
+  </body>
+</html>

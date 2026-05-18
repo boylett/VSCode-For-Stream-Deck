@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Open Folder</title>
+    <link rel="stylesheet" href="_pi.css" />
+    <script src="_pi.js"></script>
+  </head>
+  <body>
+    <div class="field">
+      <label for="path">Path</label>
+      <input type="text" id="path" placeholder="/Users/me/project" />
+    </div>
+
+    <div class="field field--checkbox">
+      <input type="checkbox" id="newWindow" />
+      <label for="newWindow">Open in a new window</label>
+    </div>
+
+    <script>
+      initPropertyInspector([
+        { id: "path", type: "text" },
+        { id: "newWindow", type: "checkbox" },
+      ]);
+    </script>
+  </body>
+</html>

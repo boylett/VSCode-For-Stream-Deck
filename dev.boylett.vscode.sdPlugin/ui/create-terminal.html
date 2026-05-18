@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Create Terminal</title>
+    <link rel="stylesheet" href="_pi.css" />
+    <script src="_pi.js"></script>
+  </head>
+  <body>
+    <div class="field">
+      <label for="name">Name</label>
+      <input type="text" id="name" placeholder="dev" />
+    </div>
+
+    <div class="field">
+      <label for="workingDirectory">Cwd</label>
+      <input type="text" id="workingDirectory" placeholder="/Users/me/project" />
+    </div>
+
+    <div class="field">
+      <label for="shellPath">Shell</label>
+      <input type="text" id="shellPath" placeholder="/bin/zsh" />
+    </div>
+
+    <div class="field">
+      <label for="shellArgs">Shell Args</label>
+      <input type="text" id="shellArgs" placeholder='["-l"] or just -l' />
+    </div>
+
+    <div class="field">
+      <label for="environment">Env</label>
+      <textarea id="environment" placeholder='{"NODE_ENV": "development"}'></textarea>
+    </div>
+    <div class="hint">JSON object of environment variables to set.</div>
+
+    <div class="field field--checkbox">
+      <input type="checkbox" id="preserveFocus" />
+      <label for="preserveFocus">Don't steal focus</label>
+    </div>
+
+    <details>
+      <summary>Documentation</summary>
+      <div class="docs">
+        <p>
+          All fields are optional. Empty values fall back to VS Code's defaults
+          (shell, env from the parent process, current workspace folder).
+        </p>
+      </div>
+    </details>
+
+    <script>
+      initPropertyInspector([
+        { id: "name", type: "text" },
+        { id: "workingDirectory", type: "text" },
+        { id: "shellPath", type: "text" },
+        { id: "shellArgs", type: "text" },
+        { id: "environment", type: "textarea" },
+        { id: "preserveFocus", type: "checkbox" },
+      ]);
+    </script>
+  </body>
+</html>
